@@ -34,3 +34,5 @@ node_modules
 
 *.iml
 .idea
+
+public/bundle.js

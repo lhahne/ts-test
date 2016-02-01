@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify frontend/index.ts -p [ tsify --noImplicitAny ] > public/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/lhahne/ts-test/issues"
   },
-  "homepage": "https://github.com/lhahne/ts-test#readme"
+  "homepage": "https://github.com/lhahne/ts-test#readme",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "tsify": "^0.13.2",
+    "typescript": "^1.7.5",
+    "watchify": "^3.7.0"
+  }
 }

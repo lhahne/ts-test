@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify frontend/index.ts -p [ tsify --noImplicitAny ] > public/bundle.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,12 @@
     "browserify": "^13.0.0",
     "connect": "^3.4.1",
     "livereload": "^0.4.1",
+    "react": "^0.14.7",
+    "rx": "^4.0.7",
     "serve-static": "^1.10.2",
     "tsify": "^0.13.2",
     "typescript": "^1.7.5",
+    "typings": "^0.6.4",
     "watchify": "^3.7.0"
   }
 }
